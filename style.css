@@ -33,43 +33,58 @@ h2 {
 
 header h1 {
     background: #4aaaa5;
-    color: white;
+    color: #ffffff;
     display: inline-block;
-    padding: 20px; 
+    padding: 30px; 
+}
+
+#test {
+    padding-left: 30px;
 }
 
 nav {
     float: right;
-    width: 300px;
-    margin-top: 25px;
+    width: 350px;
+    margin-top: 40px;
+    text-decoration: none;
    
 }
 
 nav ul li {
     display: inline;
+    border-right: 1px solid #666666;
+}
+
+
+nav ul li :last-child a {
+    border-right: none;
+    padding-right: none;
 }
 
 nav a {
-    color: #333333;
+    color: #777777;
+    font-size: 18px;
     padding: 5px 15px;
-    margin-top: 30px;
+    text-decoration: none;
 }
 
 .wrapper {
     clear: both;
     width: 960px;
     margin: 0 auto;
-    background: white;
+    background: #ffffff;
+    padding: 20px;
 }
 
 .middle-column, h2 {
-    padding: 20px 10px;
+    padding: 30px 15px;
 }
 
 .middle-column {
     border-top: 2px solid #cccccc;
     margin-left: 20px;
     margin-right: 20px;
+   
 }
 
 img {
@@ -88,4 +103,43 @@ footer {
     padding-top: 20px;
     background: #666666;
     color: whitesmoke;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-bottom: 3px;
+    font-size: 10px;
+}
+
+.clearfix {
+    display: block;
+    clear: both;
+}
+
+form label {
+    display: block;
+
+}
+
+form input {
+    width: 100%;
+}
+
+form textarea   {
+    width: 100%;
+    height: 150px;
+    
+}
+
+button {
+    background: #4aaaa5;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 5px;
+
+}
+
+.portfolio-item {
+    position: relative;
+    margin-bottom: 20px;
+    width: 45%;
 }
